@@ -1,4 +1,6 @@
+#!/usr/bin/env ruby
 
+# Improvement: read by 4, read more by 1
 class Unit
   NORTH = :N
   EAST  = :E
