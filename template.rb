@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'minitest'
+require 'minitest/spec'
 
 class MyClass
   def initialize
@@ -9,9 +10,9 @@ end
 
 # ------ tests ------
 
-class MyClassTest < Minitest::Test
-  def test_one
-    assert_equal 1, 1
+describe TinyScreen do
+  describe 'test' do
+    it { 1.must_equal 1 }
   end
 end
 
